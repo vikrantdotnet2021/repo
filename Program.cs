@@ -1,4 +1,4 @@
-﻿// Wap to accept to 2 no.
+﻿//wap to accept radius and print area and circ of circle
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,16 +11,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //wap to accept 2 no. and display addtion of 2 no.
-            int num1, num2, res;
-            Console.WriteLine("enter number1");
-            num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter number2");
-            num2 = Convert.ToInt32(Console.ReadLine());
-            res = num1 + num2;
-            Console.WriteLine("addition = " + res);
+            //wap to accept radius and print area and circ of circle
+            int radius;
+            float area, circ;
+            Console.WriteLine("enter radius");
+            radius = Convert.ToInt32(Console.ReadLine());
+            area = (float)3.14f * radius * radius;
+            circ = (float)2 * 3.14f * radius;
+            Console.WriteLine("area " + area);
+            Console.WriteLine("circ " + circ);
             Console.ReadLine();
         }
     }
 }
-
