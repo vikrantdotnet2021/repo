@@ -1,4 +1,4 @@
-﻿// WAP to print Hello.
+﻿//  //wap to accet no. from the user and print sq
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +11,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hello");
-            //console is a class
-            //writeline is a method
+          
+            int num, sq;
+            Console.WriteLine("enter number");
+            num = Convert.ToInt32(Console.ReadLine());
+            sq = num * num;
+            Console.WriteLine("Sq = " + sq);
             Console.ReadLine();
         }
     }
